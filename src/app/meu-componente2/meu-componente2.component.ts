@@ -15,6 +15,7 @@ export class MeuComponente2Component implements OnInit {
       nome: 'Maria'
     }
   }
+  myList = [1, 2, 3, 4, 5];
 
   constructor() { }
 

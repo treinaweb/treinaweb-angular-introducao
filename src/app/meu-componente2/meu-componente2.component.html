@@ -2,9 +2,6 @@
   {{ aluno?.dados?.nome }}
 </p>
 
-<div [ngSwitch]="myValue" >
-  <span *ngSwitchCase="1" >Valor 1</span>
-  <span *ngSwitchCase="2" >Valor 2</span>
-  <span *ngSwitchCase="3" >Valor 3</span>
-  <span *ngSwitchCase="" >Valor Padrão</span>
-</div>
+<ul>
+  <li *ngFor="let item of myList" >Item {{ item }}</li>
+</ul>
