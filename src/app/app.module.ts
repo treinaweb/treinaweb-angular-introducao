@@ -1,27 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { MeuComponenteComponent } from './meu-componente.component';
-import { MeuComponente2Component } from './meu-componente2/meu-componente2.component';
-import { AlunosService } from './services/alunos.service';
+import { ListComponent } from './views/list/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MeuComponenteComponent,
-    MeuComponente2Component
+    ListComponent
   ],
   imports: [
-    BrowserModule,
-    FormsModule,
-    HttpClientModule
+    BrowserModule
   ],
-  providers: [
-    AlunosService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
