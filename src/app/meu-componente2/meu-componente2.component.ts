@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MeuComponente2Component implements OnInit {
 
+  nome = 'Akira';
+
+  aluno = {
+    dados: {
+      nome: 'Maria'
+    }
+  }
+
   constructor() { }
 
   ngOnInit() {
