@@ -2,6 +2,10 @@
   {{ nome }}
 </p>
 
+<input type="text" [(ngModel)]="searchText" (keyup.enter)="getProjects()" />
+
 <ul>
-  <li *ngFor="let aluno of alunos" >Nome: {{ aluno.nome }}</li>
+  <li *ngFor="let project of projects" >
+    Name: {{ project.full_name }}
+  </li>
 </ul>
