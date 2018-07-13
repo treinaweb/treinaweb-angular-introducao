@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 
 import { AlunosService } from './../services/alunos.service';
 
@@ -42,8 +42,9 @@ export class MeuComponente2Component implements OnInit {
       const url = `https://api.github.com/search/repositories`;
 
       const params = new HttpParams().set('q', this.searchText);
+      const headers = new HttpHeaders().set('Content-Type', 'text/html');
 
-      this.http.get<GithubResponse>(url, {params})
+      this.http.get<GithubResponse>(url, {params, headers})
         .subscribe(
           response => {
             this.projects = response.items;
