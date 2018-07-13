@@ -1,3 +1,6 @@
-<p>
+<p *ngIf="isVisible; else condicaoFalsa" >
   {{ aluno?.dados?.nome }}
 </p>
+<ng-template #condicaoFalsa >
+  <p>Outro Texto</p>
+</ng-template>

@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MeuComponente2Component implements OnInit {
 
   nome = 'Akira';
-
+  isVisible = false;
   aluno = {
     dados: {
       nome: 'Maria'
