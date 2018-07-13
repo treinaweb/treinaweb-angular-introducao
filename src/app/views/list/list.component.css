@@ -13,6 +13,12 @@
   #poke-filter:focus{
     outline: none;
   }
+
+  .selected-pkm{
+    position: fixed;
+    top: 35px;
+    left: 0;
+  }
   
   .poke-list {
     float: right;

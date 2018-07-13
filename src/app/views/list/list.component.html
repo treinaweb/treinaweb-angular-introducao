@@ -1,7 +1,10 @@
 <input type="text" id="poke-filter" placeholder="Search" maxlength="20" >
 
+<img [src]="pkmSprite" class="selected-pkm" *ngIf="selectedPkm !== null"  >
+
+
 <ul class="poke-list" >
-  <li class="poke-list-item" *ngFor="let pokemon of pokemonList" >
+  <li class="poke-list-item" *ngFor="let pokemon of pokemonList" (mouseenter)="selectPokemon(pokemon)" >
     <img src="//serebii.net/pokedex-xy/icon/{{ pokemon.number | number:'3.0-0' }}.png" >
     <span>{{ pokemon.number | number:'3.0-0' }} - {{ pokemon.name }}</span>
   </li>
