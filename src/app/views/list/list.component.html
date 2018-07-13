@@ -1,4 +1,4 @@
-<input type="text" id="poke-filter" placeholder="Search" maxlength="20" >
+<input [(ngModel)]="nameFilter" type="text" id="poke-filter" placeholder="Search" maxlength="20" >
 
 <img [src]="pkmSprite" class="selected-pkm" *ngIf="selectedPkm !== null"  >
 
