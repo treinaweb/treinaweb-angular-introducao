@@ -10,9 +10,6 @@
 
 <div 
 
-  [class.classe1]="minhaClasse.value == 1"
-  [class.classe2]="minhaClasse.value == 2"
-  [class.classe3]="minhaClasse.value == 3"
-  [class.classeMaior1]="minhaClasse.value > 1"
+  [style.display]="minhaClasse.value == 1 ? 'none' : 'block'"
 
 >Minha Classe</div>
