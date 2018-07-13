@@ -26,6 +26,7 @@ export class ListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.pokeapi.listAll();
   }
   
   selectPokemon(pkm){
