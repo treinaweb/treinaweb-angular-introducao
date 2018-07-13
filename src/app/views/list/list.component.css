@@ -1,0 +1,54 @@
+#poke-filter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    padding: 10px;
+    border: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #666;
+    color: #fff; }
+  
+  #poke-filter:focus{
+    outline: none;
+  }
+  
+  .poke-list {
+    float: right;
+    margin-top: 50px;
+    width: 70%;
+    text-transform: capitalize;
+    opacity: 0.95; }
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+.poke-list-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    list-style: none;
+    background-color: #333;
+    color: white; }
+  .poke-list-item:hover {
+    background-color: #555; }
+  .poke-list-item img{
+    margin-right: 10px;
+    vertical-align: middle;
+  }
