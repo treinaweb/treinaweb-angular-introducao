@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class MeuComponente2Component implements OnInit {
 
   nome = 'TreinaWeb';
-  enderecoImagem = 'nome.png';
 
   constructor() { }
 

@@ -1,5 +1,8 @@
-<p *ngIf="isVisible" >
+<p>
   {{ nome }}
 </p>
 
-<button (click)="handleClick()" >Click Me</button>
+<input type="text" [value]="nome"
+  (input)="nome = meuNome.value"
+  #meuNome
+>
