@@ -7,19 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MeuComponente2Component implements OnInit {
 
-  nome = 'Akira';
-  isVisible = false;
-  myValue = 1;
-  aluno = {
-    dados: {
-      nome: 'Maria'
-    }
-  }
-  myList = [1, 2, 3, 4, 5];
+  nome = 'TreinaWeb';
+  enderecoImagem = 'nome.png';
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  handleClick(){
+    alert('Hi!');
   }
 
 }

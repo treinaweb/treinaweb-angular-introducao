@@ -1,7 +1,5 @@
 <p *ngIf="isVisible" >
-  {{ aluno?.dados?.nome }}
+  {{ nome }}
 </p>
 
-<ul>
-  <li *ngFor="let item of myList" >Item {{ item }}</li>
-</ul>
+<button (click)="handleClick()" >Click Me</button>
