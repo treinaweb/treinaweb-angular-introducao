@@ -2,7 +2,4 @@
   {{ nome }}
 </p>
 
-<input type="text" [value]="nome"
-  (input)="nome = meuNome.value"
-  #meuNome
->
+<input type="text" [(ngModel)]="nome" >
