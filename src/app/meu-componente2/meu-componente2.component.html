@@ -2,14 +2,6 @@
   {{ nome }}
 </p>
 
-<select (change)="0" #minhaClasse >
-  <option value="1">Classe 1</option>
-  <option value="2">Classe 2</option>
-  <option value="3">Classe 3</option>
-</select>
-
-<div 
-
-  [style.display]="minhaClasse.value == 1 ? 'none' : 'block'"
-
->Minha Classe</div>
+<ul>
+  <li *ngFor="let aluno of alunos" >Nome: {{ aluno.nome }}</li>
+</ul>
