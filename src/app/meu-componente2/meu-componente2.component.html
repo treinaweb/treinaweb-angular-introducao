@@ -1,6 +1,10 @@
-<p *ngIf="isVisible; else condicaoFalsa" >
+<p *ngIf="isVisible" >
   {{ aluno?.dados?.nome }}
 </p>
-<ng-template #condicaoFalsa >
-  <p>Outro Texto</p>
-</ng-template>
+
+<div [ngSwitch]="myValue" >
+  <span *ngSwitchCase="1" >Valor 1</span>
+  <span *ngSwitchCase="2" >Valor 2</span>
+  <span *ngSwitchCase="3" >Valor 3</span>
+  <span *ngSwitchCase="" >Valor Padrão</span>
+</div>
